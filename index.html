@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Use Swiper from cdn -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.css" integrity="sha512-0x5peylECh6ad58xDrjrNZL87Zhg9rdda76yOOHrfGr41VSEwUNmYaK72U/JVScMbSWG1n4Vj35LGmq8ggsqaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- Bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Perfume Shop</title>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <header class="header section">
+      <div class="logo-part left-side">
+        <img src="./images/logo.png" alt="Perfume Shop" class="logo-img" />
+        <a href="#" class="logo">Perfume Shop</a>
+      </div>
+
+      <div class="bx bx-menu" id="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="right-side">
+        <ul class="navbar">
+          <li class="nav-link"><a href="#home">Home</a></li>
+          <li class="nav-link"><a href="#about">About</a></li>
+          <li class="nav-link"><a href="#news">News</a></li>
+          <li class="nav-link"><a href="#products">Products</a></li>
+          <li class="nav-link"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="social-box">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar end -->
+
+    <!-- Home start -->
+    <section class="introduction" id="home">
+      <!-- pagination="true"
+        pagination-clickable="true" -->
+      <swiper-container
+        class="mySwiper slider"
+        space-between="30"
+        effect="fade"
+        navigation="true"
+        autoplay-delay="2500" autoplay-disable-on-interaction="false"
+        loop="true"
+      >
+        <swiper-slide class="swiper-1">
+          <!-- <img src=" https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/background2-1074x716.jpg" /> -->
+          <div class="info-text">
+            <p class="subtitle">New Collection</p>
+            <h1 class="title">Our Perfect Perfume</h1>
+            <div class="divider"></div>
+            <a href="#" class="main__btn btn-shop">Shop Now</a>
+          </div>
+        </swiper-slide>
+        <swiper-slide class="swiper-1">
+          <img
+            src="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image2-1170x780.jpg"
+          />
+        </swiper-slide>
+        <swiper-slide class="swiper-1">
+          <img src="https://www.lizzieinlace.com/wp-content/uploads/2021/01/17-feminine-perfume-collection.jpg" />
+        </swiper-slide>
+        <swiper-slide class="swiper-1">
+          <img src="https://www.byrdie.com/thmb/Jp60uLnq11II0k3YpRl2pmB_gCM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Stocksy_txp0267d685AQe300_Medium_3388463-67d9e63a69ca4085b032920e413aae25.jpg" />
+        </swiper-slide>
+      </swiper-container>
+    </section>
+    <!-- Home end -->
+
+    <div class="section-divider"></div>
+    <!-- About start -->
+    <section class="about" id="about">
+      <div class="cards section">
+        <div class="favs card">
+          <div class="card-content">
+            <i class="fa-regular fa-heart"></i>
+            <p class="heading">Most Popular Brands</p>
+            <small class="details">Curabitur non nulla sit amet</small>
+          </div>
+        </div>
+        <div class="bests card">
+          <div class="card-content">
+            <i class="fa-regular fa-star"></i>
+            <p class="heading">The Best of Perfume</p>
+            <small class="details">Curabitur non nulla sit amet</small>
+          </div>
+        </div>
+        <div class="yours card">
+          <div class="card-content">
+            <i class="fa-solid fa-bag-shopping" style="color: #fff"></i>
+            <p class="heading">Choose Your Smell</p>
+            <small class="details">Curabitur non nulla sit amet</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+      <div class="img"></div>
+
+      <div class="parts section row justify-content-between">
+        <div class="smell__num part col-12 col-md-6 col-lg-4">
+          <div><span class="num" data-val="86">00</span><span>%</span></div>
+          <p class="text">Unique Smells</p>
+        </div>
+
+        <div class="clients__num part col-12 col-md-6 col-lg-4">
+          <div><span class="num" data-val="800">00</span><span>+</span></div>
+          <p class="text">Happy Clients</p>
+        </div>
+
+        <div class="return__num part col-12 col-md-6 col-lg-4">
+          <div><span class="num" data-val="90">00</span><span>%</span></div>
+          <p class="text">Clients Return</p>
+        </div>
+      </div>
+
+      <a href="#" class="main__btn">Our Products</a>
+
+      <div class="divider"></div>
+      <div class="divider"></div>
+
+      <div class="quote section">
+        <h1 class="title">Inspiration</h1>
+        <blockquote class="words">
+          No elegance is possible without <span>perfume</span>. It is the
+          unseen, unforgettable, ultimate accessory.
+        </blockquote>
+        <span class="author">Coco Chanel</span>
+      </div>
+
+      <div class="divider"></div>
+      <div class="divider"></div>
+      <div class="img__gallery section">
+        <div class="gallery">
+          <a
+            target="_blank"
+            href="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image19-366x366.jpg"
+          >
+            <img
+              src="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image19-366x366.jpg"
+              width="600"
+              height="400"
+            />
+          </a>
+        </div>
+
+        <div class="gallery">
+          <a
+            target="_blank"
+            href="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image6-366x366.jpg"
+          >
+            <img
+              src="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image6-366x366.jpg"
+              width="600"
+              height="400"
+            />
+          </a>
+        </div>
+
+        <div class="gallery">
+          <a
+            target="_blank"
+            href="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image14-366x366.jpg"
+          >
+            <img
+              src="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image14-366x366.jpg"
+              width="600"
+              height="400"
+            />
+          </a>
+          <div class="overlay"></div>
+        </div>
+
+        <div class="gallery">
+          <a
+            target="_blank"
+            href="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image18-366x366.jpg"
+          >
+            <img
+              src="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image18-366x366.jpg"
+              alt="Mountains"
+              width="600"
+              height="400"
+            />
+          </a>
+          <div class="overlay"></div>
+        </div>
+
+        <div class="gallery">
+          <a
+            target="_blank"
+            href="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image16-366x365.jpg"
+          >
+            <img
+              src="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image16-366x365.jpg"
+              alt="Mountains"
+              width="600"
+              height="400"
+            />
+          </a>
+          <div class="overlay"></div>
+        </div>
+
+        <div class="gallery">
+          <a
+            target="_blank"
+            href="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image17-366x366.jpg"
+          >
+            <img
+              src="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image17-366x366.jpg"
+              alt="Mountains"
+              width="600"
+              height="400"
+            />
+          </a>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </section>
+    <!-- About end -->
+
+    <div class="divider"></div>
+    <div class="divider"></div>
+    <!-- News Start -->
+    <section class="news section" id="news">
+      <h1 class="title text-center display-2">News</h1>
+      <!-- <p class="text-center">|</p> -->
+      <div class="spacer"></div>
+
+      <div class="row">
+        <!--ADD CLASSES HERE d-flex align-items-stretch-->
+        <div class="col-lg-6 mb-3 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="https://www.publico.es/uploads/2019/07/04/5d1dad772e83c.jpg"
+              class="card-img-top"
+              alt="Card Image"
+            />
+            <div class="card-body d-flex flex-column">
+              <!-- <span>-</span> -->
+              <span class="card-title display-4">
+                <a href="#" class="text-primary">Perfume</a>
+                <span class="date">Nov 3, 2022</span>
+              </span>
+              <strong class="card-text mb-4"
+                >Our perfume is exactly what you need</strong
+              >
+            </div>
+          </div>
+        </div>
+        <!--ADD CLASSES HERE d-flex align-items-stretch-->
+        <div class="col-lg-6 mb-3 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="https://i.pinimg.com/564x/05/f8/31/05f8316f78ddd5f6faff78a0525078a2.jpg"
+              class="card-img-top"
+              alt="Card Image"
+            />
+            <div class="card-body d-flex flex-column">
+              <span class="card-title display-4">
+                <a href="#" class="text-primary">Perfume</a>
+                <span class="date">Nov 3, 2022</span>
+              </span>
+              <strong class="card-text mb-4"
+                >Our perfume is exactly what you need</strong
+              >
+            </div>
+          </div>
+        </div>
+        <!--ADD CLASSES HERE d-flex align-items-stretch-->
+        <div class="col-lg-6 mb-3 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="https://i.pinimg.com/564x/72/ab/fa/72abfa0eae8446109432ed9f924db234.jpg"
+              class="card-img-top"
+              alt="Card Image"
+            />
+            <div class="card-body d-flex flex-column">
+              <span class="card-title display-4">
+                <a href="#" class="text-primary">Perfume</a>
+                <span class="date">Nov 3, 2022</span>
+              </span>
+              <strong class="card-text mb-4"
+                >Our perfume is exactly what you need</strong
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-3 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="https://i.pinimg.com/564x/1f/90/53/1f9053558364d1da84fefad67af5f03d.jpg"
+              class="card-img-top"
+              alt="Card Image"
+            />
+            <div class="card-body d-flex flex-column">
+              <span class="card-title display-4">
+                <a href="#" class="text-primary">Perfume</a>
+                <span class="date">Nov 3, 2022</span>
+              </span>
+              <strong class="card-text mb-4"
+                >Our perfume is exactly what you need</strong
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- News End -->
+
+    <section class="testimonials section">
+      <swiper-container class="mySwiper swiper-2" init="false">
+        <swiper-slide class="slide-2">
+          <i class="fa-regular fa-pen-to-square test-icon"></i>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
+            eualiquam egetvestibulum nonetiam. Conubia commodo tincidunt
+            ametmauris hac, nibhmorbi mattis. Auctor feugiatvivamus felis eros
+            penatibus orci nulla imperdiet, ornare sodalesaenean.
+            Lobortisinteger pretiummorbi vivamus finibus elitcras.
+          </p>
+          <p class="name display-7">John Snow</p>
+          <small class="position display-4">Customer</small>
+        </swiper-slide>
+        <swiper-slide class="slide-2">
+          <i class="fa-solid fa-quote-left test-icon"></i>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
+            eualiquam egetvestibulum nonetiam. Conubia commodo tincidunt
+            ametmauris hac, nibhmorbi mattis. Auctor feugiatvivamus felis eros
+            penatibus orci nulla imperdiet, ornare sodalesaenean.
+            Lobortisinteger pretiummorbi vivamus finibus elitcras.
+          </p>
+          <p class="name display-7">John Snow</p>
+          <small class="position display-4">Customer</small>
+        </swiper-slide>
+        <swiper-slide class="slide-2">
+          <i class="fa-solid fa-quote-left test-icon"></i>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
+            eualiquam egetvestibulum nonetiam. Conubia commodo tincidunt
+            ametmauris hac, nibhmorbi mattis. Auctor feugiatvivamus felis eros
+            penatibus orci nulla imperdiet, ornare sodalesaenean.
+            Lobortisinteger pretiummorbi vivamus finibus elitcras.
+          </p>
+          <p class="name display-7">John Snow</p>
+          <small class="position display-4">Customer</small>
+        </swiper-slide>
+      </swiper-container>
+    </section>
+
+    <div class="divider"></div>
+    <div class="divider"></div>
+    <section class="products section" id="products">
+      <h1 class="title">New Products</h1>
+
+      <div class="product-cards row">
+        <div class="product col-12 col-md-6 col-lg-4">
+          <img
+            src="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image14.jpg"
+          />
+
+          <div class="product-info">
+            <h3 class="proname">Myriamk</h3>
+            <small class="price">85$</small>
+          </div>
+        </div>
+        <div class="product product col-12 col-md-6 col-lg-4">
+          <img
+            src="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image6-1-600x600.jpg"
+          />
+
+          <small class="note">Out of Stock</small>
+          <div class="product-info">
+            <h3 class="proname">Myriamk</h3>
+            <small class="price">85$</small>
+          </div>
+        </div>
+        <div class="product product col-12 col-md-6 col-lg-4">
+          <img
+            src="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image18-1-600x600.jpg"
+          />
+
+          <div class="product-info">
+            <h3 class="proname">Myriamk</h3>
+            <small class="price">85$</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sale section row">
+      <img
+        src="https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image19-600x600.jpg"
+        class="product-img col-12 col-md-6"
+      />
+
+      <div class="description col-12 col-md-6">
+        <small class="tag">Sale</small>
+
+        <h1 class="title">Lilybell</h1>
+        <span class="del">$145</span> <span class="new-pr">$135</span>
+
+        <div class="text mb-5">
+          Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit odit aut
+          fugit, sed quia consequuntur. Lorem ipsum nonum eirmod dolor. Aquia
+          sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et
+          dolore magna aliquyam.erat, sed diam voluptua. At vero accusam et
+          justo duo dolores et ea rebum. Stet clitain vidunt ut labore eirmod
+          tempor invidunt magna aliquyam. Stet clitain vidunt ut labore.
+        </div>
+
+        <a class="main__btn buy">Buy Now</a>
+
+        <div class="divider"></div>
+        <p class="text">
+          <span>Category:</span>
+          Perfume
+        </p>
+        <p class="text">
+          <span>Tags:</span>
+          sweet
+        </p>
+        <p class="text">
+          <span>Product ID:</span>
+          2234
+        </p>
+      </div>
+    </div>
+
+    <section class="contact section row" id="contact">
+      <div class="details col-12 col-md-6 col-lg-4">
+        <h2 class="title">Contact Details</h2>
+
+        <p class="address">G57 Pendwyallt Road,WYBERTON</p>
+
+        <a href="mailto:site@email.com" class="d-block">site@email.com</a>
+
+        <a href="tel: +12345678900" class="tel">+1(234)567-89-00</a>
+
+        <div class="divider"></div>
+        <div class="social-links d-flex">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form col-12 col-md-6 col-lg-8">
+        <form action="#" class="row">
+          <div class="form-group col-12 col-md-6 col-lg-6">
+            <input type="text" id="fname" name="fname" placeholder="Name" />
+            <i class="fa-regular fa-circle-user"></i>
+          </div>
+          <div class="form-group col-12 col-md-6 col-lg-6">
+            <input type="text" id="email" name="email" placeholder="Email" />
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <div class="form-group col-12 col-md-6 col-lg-6">
+            <input
+              type="tel"
+              id="number"
+              name="number"
+              placeholder="Number"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="form-group col-12 col-md-6 col-lg-6">
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+            />
+            <i class="fa-solid fa-circle-info"></i>
+          </div>
+          <br />
+          <br />
+          <div class="form-group">
+            <textarea
+              placeholder="How can we help you?"
+              class="col-12"
+            ></textarea>
+            <i class="fa-regular fa-pen-to-square"></i>
+          </div>
+          <br /><br />
+          <div class="form-group">
+            <input type="submit" class="main__btn" value="Send Message" />
+            <i class="fa-regular fa-paper-plane"></i>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="end">
+      <div class="footer">
+        <span class="text-center">Mobirise </span>
+        <span class="copyright text-center">
+          © 2025. All Rights Reserved.
+        </span>
+      </div>
+    </footer>
+
+    <!-- Use Swiper from cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <!-- Bootstrap cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,831 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Dancing+Script&display=swap');
+@import url(./reset.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "DM Sans", sans-serif;
+  /* 'DM Sans' */
+}
+
+
+a {
+  text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+small, strong{
+  font-family: 'DM Sans', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 6px; }
+
+::-webkit-scrollbar-track { background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb { background-color: #222;
+}
+
+*::selection {
+  color: #fff;
+  background: #b18161;
+}
+
+.section {
+  padding: 2rem 9rem;
+}
+
+.divider {
+  height: 4rem;
+}
+
+.section-divider {
+  height: 8rem;
+}
+
+.main__btn {
+  width: 19rem;
+  height: 6.4rem;
+  padding: 2rem 6rem;
+  font-size: 2rem;
+  transition: 0.3 ease;
+  text-decoration: none;
+}
+
+.header,
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-part {
+  display: flex;
+  /* flex: 1; */
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  /* width: 3%; */
+  /* font-size: 2vh !important; */
+}
+
+.logo-part img {
+  height: 6rem;
+  /* width: 100%; */
+}
+
+.logo-part a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #222;
+  padding: 0 2rem;
+}
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: var(--bg-color); */
+  background-color: #fff;
+  padding: 13px 10%;
+  transition: 0.2s;
+  box-shadow: -3px -3px 7px #ffffff73,
+				2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+header.shadow {
+  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+
+.header .right-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 77%;
+}
+
+.nav-link {
+  padding: 0.8rem;
+}
+
+.nav-link a {
+  font-size: 1.9rem;
+  color: #222;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+  /* text-align: left; */
+}
+
+.nav-link a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 0.3rem;
+  top: 20px;
+  left: 0;
+  background: currentcolor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link a:hover::after,
+.nav-link a:focus::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* .nav-link a:hover{
+  color: #000;
+} */
+
+
+
+.social-box {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 400;
+}
+
+.social-box .fa-brands {
+  font-size: 2.4rem;
+  color: #222;
+  padding: 0.7rem;
+  margin: 0 0.8rem;
+}
+
+.social-box .fa-brands:hover{
+  color: #b18161 !important;
+}
+
+/* swiper styles */
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+/* .slider .swiper-button-prev{
+    background: #07091f !important;
+    color: #fff;
+  } */
+
+/* .swiper-button-next{
+    background-color: red !important;
+  } */
+
+.introduction .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: none !important;
+}
+
+.swiper-1 {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://images.unsplash.com/photo-1595535373192-fc8935bacd89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyZnVtZXxlbnwwfHwwfHw%3D&w=1000&q=80);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-1 .info-text {
+  position: absolute;
+  top: 34%;
+  left: 11%;
+  width: 51%;
+}
+
+.info-text * {
+  color: #fff;
+}
+
+.info-text p {
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+  color: #b18161;
+  margin: 0 0 1rem;
+}
+
+.info-text h1 {
+  font-size: 8.6rem;
+  /* margin: 0 0 1rem; */
+}
+
+.btn-shop {
+  background-color: #9d9690;
+  color: #fff;
+  /* margin: 2rem 0 !important; */
+}
+
+/* About css */
+.about .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70vh;
+}
+
+.about .cards > .card {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+  background-size: cover;
+  width: 31%;
+  /* width: 42rem; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 2rem; */
+}
+
+.about > .card-content {
+  padding: 12rem 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about .favs {
+  background-image: url(https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image6-600x600.jpg);
+}
+
+.about .bests {
+  background-image: url(https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image16-600x599.jpg);
+}
+
+.about .yours {
+  background-image: url(https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/image18-600x600.jpg);
+}
+
+.about .card .heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.card .details {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #fff;
+}
+
+.card-content .fa-regular,
+.card-content .fa-solid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7.3rem;
+  color: #fff;
+}
+
+.about .img {
+  background: url(https://shoppingsplaces.com/wp-content/uploads/2021/09/Expensive-Perfumes-for-Women.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-color: rgba(0, 0, 0, .4);
+    opacity: 1; */
+  width: 100%;
+  height: 80vh;
+}
+
+.parts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.part {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.part .num,
+.part span {
+  /* display: block; */
+  text-align: center;
+  font-size: 8.6rem;
+  font-family: 'DM Sans', sans-serif;
+  color: #222;
+}
+
+.part .text {
+  text-align: center;
+  text-transform: uppercase;
+  color: #52586a;
+  font-size: 1.6rem;
+  font-family: "DM Sans";
+  padding: 1.4rem 0 0;
+}
+
+.about .main__btn {
+  background: #b18161;
+  width: 23rem;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+}
+
+.about .quote {
+  background: #eff0f6;
+  padding-top: 9.5rem;
+  padding-bottom: 9.5rem;
+}
+
+.quote .words {
+  width: 100%;
+  /* height: 15rem; */
+  padding: 0 0 3rem;
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.words span {
+  color: #b18161;
+}
+
+.quote .title {
+  color: #b18161;
+  padding-bottom: 1.3rem;
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.quote .author {
+  display: block;
+  font-size: 2.4rem;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.img__gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.gallery {
+  margin: 5px;
+  /* border: 1px solid #ccc; */
+  float: left;
+  width: 180px;
+}
+
+/* div.gallery:hover {
+    border: 1px solid #777;
+  } */
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  -webkit-filter: brightness(100%);
+}
+
+div.gallery img:hover {
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* News style */
+
+.news {
+  /* opacity: 0.3; */
+  background-color: rgb(255, 255, 255);
+}
+
+.news .title {
+  margin-bottom: 3.3rem;
+}
+
+.news .spacer {
+  height: 20px;
+  width: 1px;
+  background-color: #52586a;
+  margin: auto;
+  margin-bottom: 95px;
+}
+.news-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* .align-items-stretch .card{
+  width: 60rem;
+} */
+
+.align-items-stretch .card .img{
+  max-width: 100%;
+  transition: all 0.3s;
+  /* display: block; */
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+}
+
+.align-items-stretch .card:hover img {
+  transform: scale(1.1);
+}
+
+.card-body {
+  padding: 1rem 0;
+}
+
+.card-body .card-title .text-primary:before {
+  position: absolute;
+  left: 0;
+  bottom: 11.4rem;
+  width: 35px;
+  height: 2px;
+  content: "";
+  display: block;
+  background-color: #000000;
+}
+
+.card-body .card-title .text-primary:after {
+  content: "•";
+  font-family: fontello;
+  /* display: inline-block; */
+  padding: 1rem;
+  vertical-align: baseline;
+  font-size: inherit;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(144, 145, 144);
+  /* margin: 0px 0.75em; */
+}
+
+.card-body .card-title {
+  display: flex;
+  align-items: center;
+  text-indent: 5rem;
+  text-transform: uppercase;
+}
+
+.card-body strong {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-indent: 3rem;
+  padding: 2rem;
+}
+
+.card-title .text-primary {
+  font-size: 1.6rem;
+  color: #222 !important;
+  /* pointer-events: none; */
+}
+
+.card-title .date {
+  font-size: 1.6rem;
+  color: #909190;
+}
+
+.news .card:hover img {
+  width: 100%;
+  /* transform: scale(1.5); */
+}
+.card-img-top {
+  width: 65rem;
+  height: 65rem;
+  object-fit: cover;
+  transition: 0.5s all ease-in-out;
+}
+
+.row .card {
+  width: 65rem;
+  border: none;
+}
+
+/* Testimonials */
+.testimonials {
+  height: 100vh;
+}
+.swiper-2 {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-2 swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-2 swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-2 .text {
+  font-family: "DM Sans";
+  font-size: 2.4rem;
+  line-height: 1.4;
+  margin: 0 0 2.3rem;
+  width: 59%;
+}
+
+.slide-2 .name {
+  font-weight: 600;
+  margin: 0 1rem;
+}
+
+.slide-2 .position {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 2.2;
+  /* padding-bottom: 30px; */
+  color: #52586a;
+}
+
+.test-icon {
+  color: #b18161;
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Products style */
+
+.products {
+  background: url(https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/background1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.product {
+  position: relative;
+}
+.products .title {
+  font-size: 5.7rem;
+  margin: 0 0 3.5rem;
+}
+
+.product img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.product .note {
+  font-size: 16px;
+  font-family: "DM Sans";
+  color: white;
+  background: #222;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem;
+  position: absolute;
+  top: 15px;
+  left: 30px;
+}
+
+.product-info .proname {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  margin: 2.7rem 0 0;
+}
+
+.product-info .price {
+  font-size: 1.9rem;
+  margin: 1px 0 7px;
+  color: #52586a;
+}
+
+/* Sale div */
+
+.sale {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.sale .description {
+  padding: 0 3rem;
+}
+.sale .description a {
+  color: #fff;
+  background: #222;
+  margin-top: 2.3rem;
+}
+
+.description .tag {
+  font-size: 16px;
+  font-family: "DM Sans";
+  color: white;
+  background: #222;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem;
+}
+
+.description .title {
+  font-size: 5.7rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.description .del {
+  font-size: 2.4rem;
+  text-decoration: line-through;
+  color: #909190;
+}
+
+.description .new-pr {
+  display: inline-block;
+  font-size: 2.4rem;
+  color: #ff4433;
+  padding: 0 1rem;
+}
+
+.description .text {
+  font-size: 1.6rem;
+  font-family: "DM Sans";
+  line-height: 1.5;
+  color: #52586a;
+  margin-top: 30px;
+}
+
+.description .text:nth-child(2),
+.description .text:nth-child(3),
+.description .text:nth-child(4) {
+  margin: 0 !important;
+}
+
+.description .text span {
+  font-family: "Roboto";
+  font-weight: 600;
+}
+
+/* Contact style */
+
+.contact .details .title {
+  font-size: 2.4rem;
+  margin-bottom: 2.8rem;
+}
+
+.address,
+.details .d-block {
+  font-family: "DM Sans";
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+.tel {
+  font-size: 1.6rem;
+  font-weight: 600;
+  /* margin-bottom: 4.2rem; */
+}
+
+.details a {
+  color: #222;
+}
+
+.social-links .fa-brands {
+  color: #222;
+  border: 1px solid #eee;
+  align-items: center;
+  padding: 0.1rem 0.9rem;
+  /* margin: ; */
+  border-radius: 50%;
+  display: flex;
+  margin-right: 5px;
+  justify-content: center;
+  line-height: 3em;
+  width: 45px;
+  height: 45px;
+  background: #ffffff none repeat scroll 0 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  font-size: 14px;
+}
+
+/* Form style */
+
+.form-group {
+  position: relative;
+}
+
+.form-group i {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 48px;
+  font-size: 18px;
+  line-height: 48px;
+  text-align: left;
+  /* color: #ffeba7; */
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 13px 0 13px 40px;
+  border-bottom: 1px solid #e2e3e9;
+  margin-bottom: 2rem;
+  font-size: 18px;
+  font-family: "DM Sans";
+  width: 100%;
+  transition: border-bottom 0.4s ease;
+}
+
+.form-group input:hover,
+.form-group textarea:hover,
+.form-group textarea:focus,
+.form-group input:focus{
+  /* width: 100%; */
+  border-bottom: 1px solid #222;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+input[type="submit"] {
+  font-family: "DM Sans";
+  font-size: 18px;
+  background-color: #222;
+  border: none;
+  width: 19rem;
+  height: 6.4rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 12px 35px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+footer{
+  padding: 3rem 0;
+  background-image: url(https://mobirise.com/extensions/jewelrym5/perfume-shop/assets/images/background1.jpg);
+  background-size: cover;
+}
+
+.end .footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer span{
+  font-size: 1.6rem;
+  font-family: 'DM Sans';
+}
+
+.copyright{
+  color: #666;
+}
+
+
