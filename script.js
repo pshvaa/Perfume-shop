@@ -2,24 +2,45 @@
 let header = document.querySelector('.header');
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
+let cross = document.querySelector('.fa-xmark');
+// let mainListDiv = document.getElementById("mainListDiv"),
+let mediaButton = document.getElementById("mediaButton");
  
+mediaButton.onclick = function () {
+    
+  // "use strict";
+  
+  navbar.classList.toggle("show_me");
+  mediaButton.classList.toggle("active");
+  
+};
  
 window.addEventListener('scroll', () => {
     header.classList.toggle('shadow', window.scrollY > 0);
 });
  
-menu.onclick = () => {
-    navbar.classList.toggle('active');
-}
+// menu.onclick = () => {
+//     navbar.classList.toggle('active');
+// }
+
+// cross.onclick = () => {
+//   navbar.classList.toggle('active');
+// }
 window.onscroll = () => {
+    navbar.classList.remove('show_me');
     navbar.classList.remove('active');
 }
 
+// AOS animation
+AOS.init({
+  duration:1000,
+  delay:400
+});
 
 
 // Countup Animation
 let valueDisplays = document.querySelectorAll(".num");
-let interval = 8000;
+let interval = 9000;
 valueDisplays.forEach((valueDisplay) => {
   let startValue = 0;
   let endValue = parseInt(valueDisplay.getAttribute("data-val"));
@@ -36,25 +57,8 @@ valueDisplays.forEach((valueDisplay) => {
 
 // Swiper Introduction
 
-const swiperInt = document.querySelector('.mySwiper')
 
-   const details = {
-         injectStyles: [
-          `
-          .swiper-pagination-bullets{
-             display: none !important;
-          }
 
-          .swiper-button-next{
-            color: red !important;
-          }
-         `
-        ]
-   }
-
-Object.assign(swiperInt, details)
-
-swiperInt.initialize();
 
 //  Swiper Testimonials
 
