@@ -539,9 +539,9 @@ swiper-slide img {
     /* min-height: 60%; */
     /* top: 50%;
     left: -24%; */
-    top: 22%;
+    top: 18%;
     left: -16%;
-    height: 60vh;
+    height: 43vh;
   }
   .carousel-caption h1{
     font-size: 3.5rem;
@@ -552,7 +552,7 @@ swiper-slide img {
   }
 
   .btn-shop{
-    padding: 2rem 3rem !important;
+    /* padding: 2rem 3rem !important; */
     font-size: 3rem;
   }
 }
